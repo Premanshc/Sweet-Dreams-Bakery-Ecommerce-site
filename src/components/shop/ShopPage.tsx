@@ -13,7 +13,7 @@ export const ShopPage = () => {
   const [sortBy, setSortBy] = useState<string>('featured');
   const [priceRange, setPriceRange] = useState<[number, number]>([0, 100]);
   const [showFilters, setShowFilters] = useState(false);
-
+ 
   const categories = [
     { value: 'all', label: 'All Products' },
     { value: 'cakes', label: 'Cakes' },

@@ -8,7 +8,7 @@ import { motion } from 'framer-motion';
 export const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-pink-50 via-purple-50 to-pink-100">
-      {/* Floating elements */}
+      {/* Floating elements */} 
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
           animate={{ 
