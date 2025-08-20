@@ -25,8 +25,8 @@ export const CartPage = () => {
             Your Cart is Empty
           </h2>
           <p className="text-brown-600 mb-8">
-            Looks like you haven't added any sweet treats to your cart yet. 
-            Let's change that!
+            Looks like you haven&apos;t added any sweet treats to your cart yet. 
+            Let&apos;s change that!
           </p>
           <Link href="/shop">
             <motion.button
