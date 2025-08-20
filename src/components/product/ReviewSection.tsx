@@ -209,7 +209,7 @@ export const ReviewSection: React.FC<ReviewSectionProps> = ({ product, reviews }
         
    <select
           value={sortBy}
-          onChange={(e) => setSortBy(e.target.value as any)}
+          onChange={(e) => setSortBy(e.target.value as 'asc' | 'desc')}
           className="text-sm border border-pink-200 rounded-lg px-3 py-1 focus:outline-none focus:ring-2 focus:ring-pink-400"
         >
           <option value="newest">Newest First</option>
