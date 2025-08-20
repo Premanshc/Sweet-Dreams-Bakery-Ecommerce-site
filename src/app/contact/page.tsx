@@ -41,8 +41,8 @@ export default function ContactPage() {
             <span className="block text-pink-600">Touch</span>
           </h1>
           <p className="text-xl text-brown-600 max-w-3xl mx-auto leading-relaxed">
-            We'd love to hear from you! Whether you have questions about our products, 
-            want to place a custom order, or just want to say hello, we're here to help.
+            We&apos;d love to hear from you! Whether you have questions about our products, 
+            want to place a custom order, or just want to say hello, we&apos;re here to help.
           </p>
         </motion.div>
 
