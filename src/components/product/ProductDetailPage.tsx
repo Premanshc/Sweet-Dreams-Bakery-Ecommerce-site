@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Star, ShoppingBag, Heart, Minus, Plus, Shield, Truck, RotateCcw } from 'lucide-react';
@@ -29,7 +30,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({ productId 
             Product Not Found
           </h2>
           <p className="text-brown-600">
-            Sorry, we couldn't find the product you're looking for.
+            Sorry, we couldn&apos;t find the product you&apos;re looking for.
           </p>
         </div>
       </div>
@@ -67,16 +68,24 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({ productId 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Breadcrumb */}
         <nav className="mb-8">
-          <ol className="flex items-center space-x-2 text-sm text-brown-600">
-            <li><a href="/" className="hover:text-pink-600 transition-colors">Home</a></li>
-            <li><span>/</span></li>
-            <li><a href="/shop" className="hover:text-pink-600 transition-colors">Shop</a></li>
-            <li><span>/</span></li>
-            <li className="text-brown-800 capitalize">{product.category}</li>
-            <li><span>/</span></li>
-            <li className="text-brown-800 font-medium">{product.name}</li>
-          </ol>
-        </nav>
+  <ol className="flex items-center space-x-2 text-sm text-brown-600">
+    <li>
+      <Link href="/" className="hover:text-pink-600 transition-colors">
+        Home
+      </Link>
+    </li>
+    <li><span>/</span></li>
+    <li>
+      <Link href="/shop" className="hover:text-pink-600 transition-colors">
+        Shop
+      </Link>
+    </li>
+    <li><span>/</span></li>
+    <li className="text-brown-800 capitalize">{product.category}</li>
+    <li><span>/</span></li>
+    <li className="text-brown-800 font-medium">{product.name}</li>
+  </ol>
+</nav>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
           {/* Product Image */}
