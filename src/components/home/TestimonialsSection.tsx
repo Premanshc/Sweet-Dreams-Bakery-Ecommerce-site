@@ -66,7 +66,7 @@ export const TestimonialsSection = () => {
           
           <p className="text-lg text-brown-600 max-w-2xl mx-auto">
             Every review tells a story of joy, celebration, and the perfect sweet moment. 
-            Here's what our customers have to say about their experience.
+            Here&apos;s what our customers have to say about their experience.
           </p>
         </motion.div>
 
@@ -89,7 +89,7 @@ export const TestimonialsSection = () => {
 
                 {/* Content */}
                 <p className="text-brown-700 mb-6 leading-relaxed flex-grow">
-                  "{testimonial.content}"
+                  &quot;{testimonial.content}&quot;
                 </p>
 
                 {/* Rating */}
