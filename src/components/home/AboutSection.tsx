@@ -53,7 +53,7 @@ export const AboutSection = () => {
               What started as a small neighborhood bakery has grown into a beloved 
               institution. Our commitment to using only the finest ingredients, 
               time-honored techniques, and innovative flavors has made us the 
-              go-to destination for life's sweetest moments.
+              go-to destination for life&apos;s sweetest moments.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
