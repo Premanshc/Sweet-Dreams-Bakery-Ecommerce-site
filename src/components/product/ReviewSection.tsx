@@ -8,7 +8,8 @@ import { Product, Review } from '@/types';
 interface ReviewSectionProps {
   product: Product;
   reviews: Review[];
-}
+}type SortOrder = 'asc' | 'desc';
+const [sortBy, setSortBy] = useState<SortOrder>('asc');
 
 export const ReviewSection: React.FC<ReviewSectionProps> = ({ product, reviews }) => {
   const [showReviewForm, setShowReviewForm] = useState(false);
@@ -208,10 +209,11 @@ export const ReviewSection: React.FC<ReviewSectionProps> = ({ product, reviews }
         </div>
         
         <select
-          value={sortBy}
-          onChange={(e) => setSortBy(e.target.value as any)}
-          className="text-sm border border-pink-200 rounded-lg px-3 py-1 focus:outline-none focus:ring-2 focus:ring-pink-400"
-        >
+  value={sortBy}
+  onChange={(e: React.ChangeEvent<HTMLSelectElement>) =>
+    setSortBy(e.target.value as SortOrder)
+  }
+>
           <option value="newest">Newest First</option>
           <option value="oldest">Oldest First</option>
           <option value="rating-high">Highest Rated</option>
